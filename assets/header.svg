@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7B2CBF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .t{font:800 96px 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:22px;fill:#fff}
+      .s{font:400 16px 'SF Mono',Menlo,Consolas,monospace;letter-spacing:6px;fill:#8a8a8a}
+      .g{animation:breathe 6s ease-in-out infinite}
+      .bar{animation:scan 7s linear infinite}
+      .wave rect{fill:#fff;opacity:.55;transform-box:fill-box;transform-origin:center bottom;animation:eq 1.6s ease-in-out infinite}
+      @keyframes breathe{0%,100%{opacity:.6}50%{opacity:1}}
+      @keyframes scan{0%{transform:translateY(-120px)}100%{transform:translateY(320px)}}
+      @keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+    </style>
+  </defs>
+  <rect width="1200" height="300" fill="#000"/>
+  <rect class="g" width="1200" height="300" fill="url(#glow)"/>
+  <text x="600" y="168" text-anchor="middle" class="t">IFEELVOID</text>
+  <text x="600" y="214" text-anchor="middle" class="s">MUSIC · MACOS TOOLS · SYSTEMS</text>
+  <g class="wave" transform="translate(540 240)">
+    <rect x="0"   y="0" width="4" height="24" style="animation-delay:-.1s"/>
+    <rect x="12"  y="0" width="4" height="24" style="animation-delay:-.5s"/>
+    <rect x="24"  y="0" width="4" height="24" style="animation-delay:-.9s"/>
+    <rect x="36"  y="0" width="4" height="24" style="animation-delay:-.3s"/>
+    <rect x="48"  y="0" width="4" height="24" style="animation-delay:-1.2s"/>
+    <rect x="60"  y="0" width="4" height="24" style="animation-delay:-.7s"/>
+    <rect x="72"  y="0" width="4" height="24" style="animation-delay:-.2s"/>
+    <rect x="84"  y="0" width="4" height="24" style="animation-delay:-1s"/>
+    <rect x="96"  y="0" width="4" height="24" style="animation-delay:-.4s"/>
+    <rect x="108" y="0" width="4" height="24" style="animation-delay:-.8s"/>
+  </g>
+  <rect class="bar" width="1200" height="100" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" fill="none" stroke="#1c1c1c"/>
+</svg>
